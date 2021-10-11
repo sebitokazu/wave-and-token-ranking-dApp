@@ -18,10 +18,16 @@ const main = async () => {
     lunaBullTxn2 = await waveContract.connect(randomPerson).bullToken("LUNA");
     await lunaBullTxn2.wait();
 
-    await waveContract.getSuggestionsByAddress(owner.address);
-    await waveContract.getSuggestionsByAddress(randomPerson.address);
+    ethBullTxn = await waveContract.bullToken("ETH");
+    await ethBullTxn.wait();
 
     await waveContract.getTokenBullCount("LUNA");
+
+    const {0: tokenArray,1: tokenCount} = await waveContract.getAllTokenBullCount();
+    tokenArray.forEach((element,idx) => {
+        console.log("%s token has %d votes", element, tokenCount[idx]);
+    });
+
 
 };
 

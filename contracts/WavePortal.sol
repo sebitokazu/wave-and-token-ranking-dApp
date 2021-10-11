@@ -11,6 +11,13 @@ contract WavePortal {
     mapping(string => uint256) tokenSuggestionCount;
     string[] public tokens;
 
+
+    /*
+     * A little magic, Google what events are in Solidity!
+     */
+    event NewWave(address indexed from, uint256 timestamp);
+    event NewVote(address indexed from, uint256 timestamp, string token);
+
     constructor() {
         console.log("ANASHEEEEEEE");
     }
@@ -18,6 +25,12 @@ contract WavePortal {
     function wave() public {
         totalWaves += 1;
         console.log("%s says: ANASHEEE",msg.sender);
+
+        /*
+         * I added some fanciness here, Google it and try to figure out what it is!
+         * Let me know what you learn in #general-chill-chat
+         */
+        emit NewWave(msg.sender, block.timestamp);
     }
 
     function getTotalWaves() public view returns (uint256){
@@ -29,6 +42,7 @@ contract WavePortal {
         saveIfNewToken(_tokenName);
         tokenSuggestionCount[_tokenName] += 1;
         console.log("%s is bullish on %s", msg.sender, _tokenName);
+        emit NewVote(msg.sender, block.timestamp, _tokenName);
     }
 
     function getTokenBullCount(string memory _tokenName) public view returns (uint256){

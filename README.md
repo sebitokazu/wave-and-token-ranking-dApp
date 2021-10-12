@@ -17,3 +17,7 @@ Web3 dApp that allows user to send me a message with a chance of getting 0.0001 
 * IDE and deployment: repl.it
 * Javscript Web3 library: ethers.js
 * Wallet client: Metamask
+
+## Milestone
+
+[Cohort's NFT](https://opensea.io/assets/matic/0x3cd266509d127d0eac42f4474f57d0526804b44e/1110/) on OpenSea for completing the course within the first week

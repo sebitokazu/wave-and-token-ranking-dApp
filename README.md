@@ -1,15 +1,19 @@
-# Basic Sample Hardhat Project
+# Wave and Token ranking dApp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+LIVE @ Rinkeby Testnet: https://waveportal-baseline-student.sebitokazu.repl.co
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Web3 dApp that allows user to send me a message with a chance of getting 0.0001 eth back or vote for your favorite token and see which one is the bullishiest!
+
+## Backend
+
+Smart Contracts coding: Solidity language
+Testing: Hardhat
+Node service: Alchemy
+
+## Frontend
+
+Framework: React
+IDE and deployment: repl.it
+Javscript Web3 library: ethers.js
+Wallet client: Metamask

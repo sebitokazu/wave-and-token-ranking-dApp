@@ -7,13 +7,13 @@ Web3 dApp that allows user to send me a message with a chance of getting 0.0001 
 
 ## Backend
 
-Smart Contracts coding: Solidity language
-Testing: Hardhat
-Node service: Alchemy
+* Smart Contracts coding: Solidity language
+* Testing: Hardhat
+* Node service: Alchemy
 
 ## Frontend
 
-Framework: React
-IDE and deployment: repl.it
-Javscript Web3 library: ethers.js
-Wallet client: Metamask
+* Framework: React
+* IDE and deployment: repl.it
+* Javscript Web3 library: ethers.js
+* Wallet client: Metamask
